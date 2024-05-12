@@ -1,0 +1,639 @@
+
+    html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+	  
+	  
+	input[type=checkbox].with-font {
+		/*using Html Boiler Plate .visuallyhidden code*/
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+	  
+	.icon-top-control {
+		position: absolute;
+		z-index: 40;
+		cursor: pointer;
+		transform: translateY(60%);
+		font-size: 1.5em;
+		color: grey;
+	}
+    
+    .icon-top-advert {
+		position: absolute;
+		z-index: 40;
+		cursor: pointer;
+		transform: translateY(60%);
+	}
+
+	.layers {
+        left: 20px;
+	}
+
+	.compass {
+        right: 20px;
+	}
+
+	.basemap-toggle {
+		font-size: 1.5em;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+    
+    .cluster-toggle {
+		font-size: 1.5em;
+		margin-left: 5px;
+		margin-right: 5px;
+        bottom: 5px;
+	}
+	
+	.sketch-toggle-off {
+		font-size: 2em;
+		margin-left: 5px;
+		margin-right: 5px;
+		color: #acabab;
+	}
+	
+	.sketch-toggle-off-top {
+		font-size: 5em;
+		margin-left: 10px;
+		margin-right: 10px;
+		color: #acabab;
+	}
+	
+	.sketch-toggle-on-top {
+		font-size: 5em;
+		margin-left: 10px;
+		margin-right: 10px;
+		color: #7e7e7e;
+	}
+	
+	.sketch-toggle-on {
+		font-size: 2em;
+		margin-left: 5px;
+		margin-right: 5px;
+		color: #5a5858;
+	}
+	
+
+	
+	.panel {
+		position: absolute;
+		width: 60%;
+		height: 85%;
+		z-index: 100;
+		/*background: #ffffff;*/
+		color: #777777;
+		overflow: auto;
+		display: none;
+		border-right:2px solid #C6C6C6;
+		background-color: #e7e7e7;
+		
+    }
+
+	.about {
+		position: relative;
+		left: 10px;
+	    font-family: 'Raleway', sans-serif;
+	}
+
+	.about a {
+		color: #581845;
+		text-decoration: none;
+	}
+	
+	.about a:hover {
+		color: #900C3F;
+		text-decoration: none;
+	}
+    
+    .tool-box {
+        border-bottom: 1px solid #D3D3D3;
+	    font-family: 'Fjalla One', sans-serif;
+    }
+	
+	.layer-box {
+		border-bottom: 1px solid #D3D3D3;
+	    font-family: 'Fjalla One', sans-serif;
+        padding-top: 7%;
+        padding-bottom: 7%;
+		padding-left: 7%;
+		padding-right: 7%;
+		background-color: #ffffff;
+	}
+	
+	.layer-box-bottom {
+		border-bottom: 1px solid #D3D3D3;
+	    font-family: 'Fjalla One', sans-serif;
+        padding-top: 25%;
+		padding-left: 3%;
+		bottom: 0px;
+		float: bottom;
+		position: relative;
+		background-color: #ffffff;
+	}
+    
+    .layer-loading {
+		position: relative;
+        padding-right: 1px;
+        padding-left: 1px;
+	}
+    
+    .layer-toggle {
+		font-size: 1.5em;
+		margin-left: 5px;
+		margin-right: 5px;
+        position: relative;
+        top: 1px;
+	}
+    
+    .layer-box-label {
+        display: inline-block;
+        position: relative;
+        /*bottom: 4px;*/
+    }
+    
+    .layer-details-twist {
+        /*display: inline-block;*/
+		font-size: 1.5em;
+        float: right;
+        right: 5px;
+        position: relative;
+		bottom: 3px;
+	}
+	
+	.layer-details-twist-for-toggle-layer {
+        /*display: inline-block;*/
+		font-size: 1.5em;
+        float: right;
+        right: 5px;
+        position: relative;
+	}
+	
+	.layer-details-box {
+		border-bottom: 1px solid #D3D3D3;
+		display: none;
+		background-color: #fafafa;
+	    font-family: 'Raleway', sans-serif;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	
+	.layer-details-toggle-open {
+	    font-weight: bold;
+        size: 10x;
+        color: #900C3F;		
+	}
+	
+	.layer-details-toggle_worked {
+		/*color: #581845;*/
+		size: 1.5em;
+		float: right;
+		position: relative;
+		right: 25px;
+        padding-right: 0px;
+        padding-left: 3px;
+	}
+	
+	.layer-action {
+		color: #581845;
+	}
+	
+	.layer-action a:hover {
+		color: #900C3F;
+		text-decoration: none;
+	}
+	
+	.layer-description {
+		/*color: #581845;*/
+		left: 10px;
+		padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+	}
+	
+	.layer-legend-icon-details {
+		padding-left: 3px;
+	}
+	
+	.layer-legend-icon-100year {
+	    border: 2px solid #ededed;
+        border-radius: 10px;
+        line-height: 18px;
+        color: #19a4ff;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+	
+	.layer-legend-icon-floodway {
+        border: 2px solid #ededed;
+	    border-radius: 10px;
+        line-height: 18px;
+        color: #004da8;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+	
+	.layer-legend-icon-500year {
+	    border: 2px solid #ededed;
+	    border-radius: 10px;
+        line-height: 18px;
+        color: #badeda;
+	    padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+	
+	.layer-legend-icon-coastal {
+        border: 2px solid #ededed;
+        border-radius: 10px;
+        line-height: 18px;
+        color: #ff9900;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+
+	
+	.layer-legend-icon-green {
+	    border: 2px solid #ededed;
+        border-radius: 10px;
+        line-height: 18px;
+        color: #25fc11;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+	
+	.layer-legend-icon-blue {
+        border: 2px solid #ededed;
+	    border-radius: 10px;
+        line-height: 18px;
+        color: #1158fc;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+	
+	.layer-legend-icon-light-blue {
+	    border: 2px solid #ededed;
+	    border-radius: 10px;
+        line-height: 18px;
+        color: #00bfff;
+	    padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+	
+	.layer-legend-icon-light-purple {
+        border: 2px solid #ededed;
+        border-radius: 10px;
+        line-height: 18px;
+        color: #ff96df;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+	
+	.layer-legend-icon-purple {
+        border: 2px solid #ededed;
+        border-radius: 10px;
+        line-height: 18px;
+        color: #d111fc;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+	
+    .layer-legend-icon-orange {
+        border: 2px solid #ededed;
+        border-radius: 10px;
+        line-height: 18px;
+        color: #ffe568;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+	
+    .layer-zoom-icon {
+		size: 16em;
+		position: relative;
+		left: 10px;
+	}
+	
+	.layer-download-icon {
+		size: 16em;
+		position: relative;
+		left: 30px;
+	}
+	
+    .layer-server-icon {
+		size: 16em;
+		position: relative;
+		left: 50px;
+	}
+
+	.geoloading {
+		position: absolute;
+		z-index: 40;
+		right: 50%;
+		top: 50%;
+		visibility: hidden;
+	}
+
+	/*.nav {
+		position: absolute;
+		color: #C6C6C6;
+		bottom: 20px;
+		left: 20px;
+    }*/		
+
+	.top {
+		width:100%;
+		height:15%;
+		max-height: 15%;
+		border-bottom:2px solid #C6C6C6;
+	}
+
+	.map {
+		width:100%;
+		height:85%;
+	}
+    
+    
+/*
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+*/
+    
+	
+	@media screen and (min-height: 355px) {
+		.icon-top-control {
+			font-size: 2em;
+		}
+        /*
+        .icon-top-text-middle {
+            display: block;
+            font-size: 2em;
+        }
+        .icon-top-text-before {
+            display: block;
+            font-size: 2em;
+        }
+        .icon-top-text-after {
+            display: block;
+            font-size: 2em;
+        }
+        */
+		.top {
+			height: 20%;
+			max-height: 20%;
+		}
+		.map {
+			height: 80%;
+		}
+        .panel {
+			height: 80%;
+		}
+        .icon-top-text-middle {
+            /*pale ocean blue*/
+		    color: #5cb9b1;
+	    }
+	}
+	
+	
+	@media screen and (min-height: 430px) {
+		.icon-top-control {
+			font-size: 2em;
+		}
+		.top {
+			height: 15%;
+		}
+		.map {
+			height: 85%;
+		}
+        .panel {
+			height: 85%;
+		}
+        .icon-top-text-middle {
+            /*orange*/
+		    color: #ef7926;
+	    }
+	}
+	
+	
+	@media screen and (min-height: 560px) {
+		.icon-top-control {
+			font-size: 3em;
+		}
+        /*
+        .icon-top-text-before {
+            display: block;
+        }
+        .icon-top-text-middle {
+            display: block;
+            font-size: 2.5em;
+        }
+        .icon-top-text-after {
+            display: block;
+        } 
+        */
+        .top {
+            height: 15%;
+        }
+		.map {
+			height: 85%;
+		}
+        .panel {
+			height: 85%;
+		}
+        .icon-top-text-middle {
+            /*olive*/
+		    color: #73bb0e;
+	    }
+
+	}
+    
+
+	@media screen and (max-width: 900px and max-height: 564px) {
+		.icon-top-control {
+			font-size: 3em;
+		}
+		.panel {
+			width: 50%;
+		}
+        .icon-top-text-middle {
+            /*maroon*/
+		    color: #581845;
+	    }
+	}
+
+
+
+    @media screen and (orientation: landscape){
+        .panel {
+            width: 30%;
+        }
+        .icon-top-text-middle {
+            /*green*/
+		    color: #26ef78;
+	    }
+        .icon-top-text-before {
+            display: inline-block;
+        }
+        .icon-top-text-middle {
+            display: inline-block;
+            font-size: 4em;
+        }
+        .icon-top-text-after {
+            display: inline-block;
+        }
+    }
+
+
+/*
+
+#00dfdc;#482894;#26ef78;
+
+#d7125e;#004c93;#ffffff;
+
+#ffffff;#00dfdc;
+
+#581845; - maroon
+#5cb9b1; - pale ocean blue
+#ef2638; - red
+#d7125e; - pink red
+#ef7926; - orange
+#26ef78; - green
+#73bb0e; - olive
+
+*/
+
+
+/*
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+*/
+
+
+
+
+ /*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+
+@media (min-width: 48em) {
+
+	.icon-top {
+		font-size: 2.5em !important;
+		color: blue;
+	}
+	.top {
+		height: 15%;
+	}
+	.map {
+		height: 85%;
+	}
+
+}
+*
+*/
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+
+@media (min-width: 78em) {
+
+		.icon-top{
+			font-size: 3em !important;
+            color: red;
+		}
+
+}
+*
+*/
+
+
+
+
+
+	
+
+    .desc:after {
+      content:" In fact, it's between 500px and 600px wide.";
+    }
+	  
+	  
+
+     @-webkit-keyframes
+       pulse
+      {
+        0%
+        {
+          opacity: 1.0;
+
+        }
+        45%
+        {
+          opacity: .20;
+
+        }
+        100%
+        {
+          opacity: 1.0;
+
+        }
+      }
+     @-moz-keyframes
+       pulse
+      {
+        0%
+        {
+          opacity: 1.0;
+        }
+        45%
+        {
+          opacity: .20;
+
+        }
+        100%
+        {
+          opacity: 1.0;
+        }
+      }
+
+      #location_graphics_layer {
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-name: pulse;
+        -moz-animation-duration: 3s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-name: pulse;
+      }

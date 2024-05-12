@@ -1,0 +1,236 @@
+	.toolbox {
+		transform: translateX(50%);
+		width: 50%;
+		background: #fafafa;/*#fafafa;#f4f3f0;#e1f0f0;#eaf1f9;*#f7fcfc;#e1f0f0;#ffffff;*/
+		border-bottom: 2px solid #4f98b0;/*#004c93;*/
+		border-left: 1px solid #4f98b0;/*#004c93;*/
+		border-right: 1px solid #4f98b0;/*#004c93;*/
+		font-size: .5em;
+		text-decoration: none;
+		text-align: center;
+        display: block;
+	}
+	
+    .advert {
+		transform: translateX(50%);
+		width: 50%;
+		background: #ffffff;
+		border-bottom: 1px solid #41b784;
+		border-left: 1px solid #41b784;
+		border-right: 1px solid #41b784;
+		font-size: .5em;
+		text-decoration: none;
+		text-align: center;
+        display: block;
+	}
+
+    #advert:hover {
+        color: #ffffff;
+		background: #41b784;
+    }
+	
+	#advert:hover .icon-top-text-before {
+		color: #ffffff;
+		background: #41b784;
+	}
+    
+    #advert:hover .icon-top-text-middle {
+		color: #ffffff;
+		background: #41b784;
+	}
+    
+    #advert:hover .icon-top-text-after {
+		color: #ffffff;
+		background: #41b784;
+	}
+	
+	.icon-top-text-before {
+	    font-size: 2em;
+		color: #5a5858;
+	    font-family: 'Indie Flower', sans-serif;
+        display: block;
+        /*display: inline-block;*/
+        font-weight: bold;
+	}
+    
+    .icon-top-text-middle {
+	    font-size: 2em;
+	    font-family: 'Fjalla One', sans-serif;
+		color: #26ef78;
+        display: block;
+        padding-right: 3px;
+        padding-left: 3px;
+	}
+    
+    .icon-top-text-after {
+	    font-size: 2em;
+		color: #5a5858;
+	    font-family: 'Indie Flower', sans-serif;
+        display: block;
+        /*display: inline-block;*/
+        font-weight: bold;
+	}
+	
+	
+	
+	
+	.layer-legend-icon-green {
+	    border: 2px solid #ededed;
+        border-radius: 10px;
+        line-height: 18px;
+        color: #25fc11;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+	
+	
+	
+    .about {
+		position: relative;
+		font-size: .85em;
+		left: 1em;
+	    font-family: 'Raleway', sans-serif;
+		float: bottom;
+	}
+
+	.about a {
+		color: #581845;
+		text-decoration: none;
+	}
+	
+	.about a:hover {
+		color: #900C3F;
+		text-decoration: none;
+	}
+	
+	
+	
+	
+	
+	
+    @media screen and (min-height: 355px) {
+		.icon-top-control {
+			font-size: 2em;
+		}
+        /*
+        .icon-top-text-middle {
+            display: block;
+            font-size: 2em;
+        }
+        .icon-top-text-before {
+            display: block;
+            font-size: 2em;
+        }
+        .icon-top-text-after {
+            display: block;
+            font-size: 2em;
+        }
+        */
+		.top {
+			height: 20%;
+			max-height: 20%;
+		}
+		.map {
+			height: 80%;
+		}
+        .panel {
+			height: 80%;
+		}
+        /* .icon-top-text-middle {
+            pale ocean blue
+		    color: #5cb9b1;
+	    } */
+	}
+	
+	
+	@media screen and (min-height: 430px) {
+		.icon-top-control {
+			font-size: 2em;
+		}
+		.top {
+			height: 15%;
+		}
+		.map {
+			height: 85%;
+		}
+        .panel {
+			height: 85%;
+		}
+        /* .icon-top-text-middle {
+            orange
+		    color: #ef7926;
+	    } */
+	}
+	
+	
+	@media screen and (min-height: 560px) {
+		.icon-top-control {
+			font-size: 3em;
+		}
+        /*
+        .icon-top-text-before {
+            display: block;
+        }
+        .icon-top-text-middle {
+            display: block;
+            font-size: 2.5em;
+        }
+        .icon-top-text-after {
+            display: block;
+        } 
+        */
+        .top {
+            height: 15%;
+        }
+		.map {
+			height: 85%;
+		}
+        .panel {
+			height: 85%;
+		}
+        /* .icon-top-text-middle {
+            olive
+		    color: #73bb0e;
+	    } */
+
+	}
+    
+
+	@media screen and (max-width: 900px and max-height: 564px) {
+		.icon-top-control {
+			font-size: 3em;
+		}
+		.panel {
+			width: 50%;
+		}
+        /* .icon-top-text-middle {
+            maroon
+		    color: #581845;
+	    } */
+	}
+
+
+
+    @media screen and (orientation: landscape){
+        .panel {
+            width: 30%;
+        }
+        /* .icon-top-text-middle {
+            green
+		    color: #26ef78;
+	    } */
+        .icon-top-text-before {
+            display: inline-block;
+        }
+        .icon-top-text-middle {
+            display: inline-block;
+            font-size: 4em;
+        }
+        .icon-top-text-after {
+            display: inline-block;
+        }
+    }
+	
+	
